@@ -90,9 +90,7 @@
 			// Setup socket default messages
 
 			socket.on('connect', function () {
-				$rootScope.$apply(function () {
-					$rootScope.$broadcast(MESSAGES.connected);
-				});
+				$rootScope.$broadcast(MESSAGES.connected);
 			});
 
 			socket.on('disconnect', function () {
